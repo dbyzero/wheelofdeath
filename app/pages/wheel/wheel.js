@@ -15,7 +15,6 @@ export class Wheel implements AfterViewInit {
     }
 
     draw() {
-        console.log(this.colors);
         var canvas = document.getElementById("wheelCanva");
         var centerX = canvas.width / 2;
         var centerY = canvas.height / 2;

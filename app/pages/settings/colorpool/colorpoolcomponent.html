@@ -1,11 +1,13 @@
+<button (click)="addColor()">+</button>
+<button (click)="removeColor()">-</button>
 <ion-input *ngFor="#poll of polls; #index=index">
 	<ion-row center>
 		<ion-col>
             <ion-label>Color {{index}}</ion-label>
-            <input type="text" [ngModel]="poll.label">
+            <input type="text" [(ngModel)]="poll.label">
 		</ion-col>
 		<ion-col>
-        	<input type="color" [ngModel]="poll.color">
+        	<input type="color" [(ngModel)]="poll.color">
 		</ion-col>
 	</ion-row>
 </ion-input>

@@ -1,7 +1,4 @@
-export class ColorPoolService {
-    getData() {
-        //MOCKUP
-        return [{
+var colors = [{
             label: 'Beer',
             color: '#F4FA58'
         }, {
@@ -17,5 +14,10 @@ export class ColorPoolService {
             label: 'Blueberry juice',
             color: '#013ADF',
         }];
+
+export class ColorPoolService {
+    getData() {
+        //MOCKUP
+        return colors;
     }
 }

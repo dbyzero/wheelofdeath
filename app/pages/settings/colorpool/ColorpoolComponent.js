@@ -10,7 +10,14 @@ export class ColorPoolComponent implements onInit {
         this.polls = colorPoolService.getData();
     }
 
-    ngOnInit() {
-    	this.polls.length = 4;
+    addColor() {
+    	this.polls.push({
+    		'label': 'test',
+    		'color': '#777777'
+    	});
+    }
+
+    removeColor() {
+    	this.polls.length -= 1;
     }
 }
