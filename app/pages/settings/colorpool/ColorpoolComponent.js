@@ -5,8 +5,12 @@ import {ColorPoolService} from '../../services/ColorPoolService';
     selector: 'colorpoollist',
     templateUrl: 'build/pages/settings/colorpool/colorpoolcomponent.html'
 })
-export class ColorPoolComponent {
+export class ColorPoolComponent implements onInit {
     constructor(colorPoolService: ColorPoolService) {
         this.polls = colorPoolService.getData();
+    }
+
+    ngOnInit() {
+    	this.polls.length = 4;
     }
 }

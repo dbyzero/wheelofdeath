@@ -1,7 +1,8 @@
 export class ColorPoolService {
     getData() {
+        //MOCKUP
         return [{
-            label: 'Bear',
+            label: 'Beer',
             color: '#F4FA58'
         }, {
             label: 'Wine',
