@@ -1,17 +1,17 @@
 var colors = [{
-            label: 'Beer',
+            label: 'Player 1',
             color: '#F4FA58'
         }, {
-            label: 'Wine',
+            label: 'Player 2',
             color: '#8A0808'
         }, {
-            label: 'Water',
+            label: 'Player 3',
             color: '#CEECF5'
         }, {
-            label: 'Orange juice',
+            label: 'Player 4',
             color: '#FFBF00'
         }, {
-            label: 'Blueberry juice',
+            label: 'Player 5',
             color: '#013ADF',
         }];
 

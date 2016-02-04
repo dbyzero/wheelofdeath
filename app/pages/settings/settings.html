@@ -4,5 +4,22 @@
     </ion-title>
 </ion-navbar>
 <ion-content padding class="settings">
-	<colorpoollist></colorpoollist>
+	<!-- <ion-item>
+		<ion-label>asdasdjhsagdkjg</ion-label>
+		<ion-checkbox dark disabled="true" checked="true"></ion-checkbox>
+	</ion-item> -->
+	<button (click)="addColor()" small><ion-icon name="add"></ion-icon></button>
+	<button (click)="removeColor()" small><ion-icon name="remove"></ion-icon></button>
+	<ion-list *ngFor="#poll of polls; #index=index" inset no-lines>
+		<ion-row center>
+			<ion-col width-67>
+				<ion-item>
+		            <input type="text" [(ngModel)]="poll.label"/>
+				</ion-item>
+			</ion-col>
+			<ion-col width-33>
+		        <input type="color" [(ngModel)]="poll.color">
+			</ion-col>
+		</ion-row>
+	</ion-list>
 </ion-content>

@@ -1,5 +1,32 @@
 .wheel {
-    #wheelCanva {
-        margin:0 auto;
+	#wheelCanva {
+		transition-timing-function:cubic-bezier(0.06, 0.55, 0.12, 1);
+		transition-duration:10s;
+		transition-property:transform;
+	}
+	padding:0;
+
+	scroll-content {
+		padding:0;
+	}
+
+	.arrow {
+		width:10px;
+		height:10px;
+		border-top:20px solid black;
+		border-left:10px solid rgba(0,0,0,0);
+		border-right:10px solid rgba(0,0,0,0);
+		border-bottom:0px;
+		margin:0 auto;
+	}
+
+    .action-container {
+    	text-align:center;
     }
+
+    .wheel-container {
+    	text-align:center;
+	    padding-bottom: 50px;
+    }
+
 }

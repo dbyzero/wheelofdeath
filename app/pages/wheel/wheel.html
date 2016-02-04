@@ -2,8 +2,18 @@
     <ion-title>Wheel</ion-title>
 </ion-navbar>
 <ion-content padding class="wheel">
-    <h2>Welcome to Wheel of death !!!</h2>
-    <button (click)="draw()">REDRAW</button>
-    <canvas id="wheelCanva" width="300" height="300">
-    </canvas>
+    <ion-row>
+    	<ion-col width-50 center class="action-container">
+    		<button (click)="draw()">REDRAW</button>
+    	</ion-col>
+    	<ion-col width-50 center class="action-container">
+    		<button (click)="go()">START</button>
+    	</ion-col>
+    </ion-row>
+    <ion-row class="wheel-container">
+    	<ion-col center>
+    		<div class="arrow"></div>
+    		<canvas id="wheelCanva" width="300" height="300"></canvas>
+    	</ion-col>
+    </ion-row>
 </ion-content>
