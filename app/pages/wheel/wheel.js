@@ -20,12 +20,16 @@ export class Wheel implements AfterViewInit {
         var canvas = document.getElementById("wheelCanva");
         canvas.style.transitionDuration = "0s";
         canvas.style.transform = "rotate(0deg)";
+        canvas.style.webkitTransitionDuration = "0s";
+        canvas.style.webkitTransform = "rotate(0deg)";
         if(this.processGoing) {
             clearTimeout(this.processGoing);
         }
         this.processGoing = setTimeout(function(){
             canvas.style.transitionDuration = "10s";
             canvas.style.transform = "rotate("+(3600 + parseInt(Math.random() * 360))+"deg)";
+            canvas.style.webkitTransitionDuration = "10s";
+            canvas.style.webkitTransform = "rotate("+(3600 + parseInt(Math.random() * 360))+"deg)";
         },0);
     }
 
