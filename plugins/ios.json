@@ -23,7 +23,7 @@
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "wheel.of.death"
         }
     },
     "dependent_plugins": {}
